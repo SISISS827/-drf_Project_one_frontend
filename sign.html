@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_f.css" />
+    <script src="sign.js"></script>
+    <script src="https://kit.fontawesome.com/1032187501.js" crossorigin="anonymous"></script>
+    <title>회원가입 | 로그인</title>
+</head>
+<body>
+    <div class="container">
+    <div class="signup-container">
+        <h2>계정이 없으신가요?</h2>
+        <p>
+        회원가입 귀찮겠지만 좀 해주세요 그래야 로그인 할 수 있으니깐요!
+        </p>
+        <button id="signup">회원가입</button>
+    </div>
+    <div class="signin-container">
+        <h2>이미 계정이 있나요?</h2>
+        <p>
+        로그인 하신 사용자만 입장이 가능합니다. 어서 가입하세요!
+        </p>
+        <button id="login">로그인</button>
+    </div>
+    <div class="overlay" id="slide">
+        <div class="form-container signup-form">
+        <form action="">
+            <h3>회원가입</h3>
+            <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="input-container">
+                <input type="email" id="signup-email" placeholder="Email...." />
+            </div>
+            <div class="input-container">
+                <input type="text" id="signup-nickname" placeholder="nickname...." />
+            </div>
+            <div class="input-container">
+                <input type="password" id="signup-password" placeholder="Password...." />
+            </div>
+            <div class="input-container">
+                <input type="password" id="signup-password2" placeholder="Confirm password..." />
+            </div>
+
+            <button class="form-button" type="button" onclick="handleSignup()">가입하기</button>
+        </form>
+        </div>
+
+        <div class="form-container signin-form">
+        <form action="" id="signup">
+            <h3>로그인</h3>
+            <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"
+                ><i class="fab fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="input-container">
+            <input type="email" id="signin-email" placeholder="Email...." />
+            </div>
+            <div class="input-container">
+            <input type="password" id="signin-password" placeholder="password...." />
+            </div>
+            <div class="forgot__password-container">
+            <!-- <a href="#">Forgot password? </a> -->
+            </div>
+
+            <button class="form-button" type="button" onclick="handleSignin()">접속</button>
+        </form>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="sign_f.js"></script>
+</html>
