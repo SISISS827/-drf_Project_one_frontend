@@ -74,7 +74,7 @@
     /* Normal Header */
     
     .active-header {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.37);
         color: black;
     }
     
@@ -181,7 +181,7 @@
         color: white;
     
         /* Background image */
-        background-image: url(A3_2.png);
+        background-image: url(범죄조직.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -1022,7 +1022,7 @@
         color: white;
     
         /* Background image */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(A3_2.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(범죄조직.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -1435,7 +1435,7 @@
         color: white;
     
         /* Background image */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(A3_2.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(범죄조직.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;

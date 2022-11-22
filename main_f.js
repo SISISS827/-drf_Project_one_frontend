@@ -4,12 +4,12 @@ $(document).ready(function(){
     if($(window).scrollTop() > 50) {
         $("#header").addClass("active-header");
         $(".menu-link").addClass("active-menu-links");
-        $("#header-img").attr("src", "https://i.ibb.co/0jM3ZvH/reverse-black.png");
+        $("#header-img").attr("src", "logo.png");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
         $("#header").removeClass("active-header");
         $(".menu-link").removeClass("active-menu-links");
-        $("#header-img").attr("src", "https://i.ibb.co/LxGJ5gF/reverse-white.png");
+        $("#header-img").attr("src", "logo.png");
     }
 });
 
