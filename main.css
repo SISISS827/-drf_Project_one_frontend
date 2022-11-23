@@ -13,7 +13,7 @@
         font-size: .7rem;
     }
 
-    .font {
+    .front {
         font-family: 'Pacifico', cursive;
     }
 
@@ -40,10 +40,11 @@
     #red-text {
         color: #ff5a6e;
     }
-    
+
     #title-text-separator {
-        width: 5%;
+        width: 100%;
         margin-top: 1%;
+        margin-left: 37px;
         border: solid 1px #ff5a6e;
     }
     
@@ -572,6 +573,8 @@
         display: flex;
         flex-flow: column;
         align-items: center;
+        margin-top: 10rem;
+        width: 100rem;
     }
     
     #media-title-description {
@@ -699,12 +702,12 @@
     */
     
     #prices-section-container {
+        box-shadow: 2px 2px 15px #bebebe;
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
         align-items: center;
-        margin: auto;
-        margin-top: 3%;
+        margin-top: 8rem;
+        width: 100rem;
     }
     
     #prices-title-description {
@@ -713,6 +716,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 4rem;
         width: 60%;
     }
     
@@ -896,6 +900,7 @@
         margin-top: 4%;
         color: #858585;
         text-align: center;
+        width: 120rem;
     }
     
     footer p {
@@ -917,7 +922,7 @@
         /* General Elements */
     
         #title-text-separator {
-        width: 15%;
+        width: 30%;
         margin-top: 3%;
         margin-bottom: 3%;
         border: solid 1px #ff5a6e;
@@ -1727,4 +1732,24 @@
         }
     
     }
+
+
+    /* 구역나누기 */
+    #container{
+        width:1500px;
+        height: auto;
+        max-height: 1000px;
+        margin: 0 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 3px solid rgb(255, 255, 255);
+        display: flex;
+    }
+
+    #container > div {
+        width: 500px;
+        border: 1px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+    }
+    
     
