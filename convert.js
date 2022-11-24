@@ -20,7 +20,7 @@ try {
     const arrayBuffer = await getArrayBuffer(file);
     const response = await uploadFileAJAX(arrayBuffer);
     
-    alert("File Uploaded Success");
+    alert("업로드 성공!!");
     showPreviewImage(file);
 } catch (error) {
     alert(error);
