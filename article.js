@@ -1,4 +1,29 @@
+// 게시글 생성 2
+async function createArticle22() {
+    image = document.getElementById("file-uploader").files[0];
+    console.log(image);
+    console.log(1)
+    const formData = new FormData();
+    console.log(2)
 
+    formData.append("post_image", image);
+    console.log(3)
+    const response = await fetch("http://127.0.0.1:8000/articles/", {
+        headers: {},
+        method: "POST",
+        body: formData,
+    });
+    console.log(5)
+    if (response.status == 200) {
+        alert("게시물 등록");
+        window.location.replace("http://127.0.0.1:5500/article_detail11.html");
+    }
+  // if (response.status==200){
+  //     window.location.replace('http://127.0.0.1:8000/users/signup/');
+  // } else {
+  //     alert(response.status)
+  // }
+}
 
 
 //게시글 생성

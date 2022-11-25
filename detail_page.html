@@ -9,12 +9,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="detail_page.css">
+    <link rel="stylesheet" href="comment.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
     <title>Document</title>
 </head>
 <body>
     <!-- 뒤로가기 -->
-    <a class="close-button" href="#">Back</a>
+    <a class="close-button" href="main.html#presentation-container">Back</a>
 
     <div class = "card-wrapper">
         <div class = "card">
@@ -44,13 +45,25 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
             </div>
             </div>
+            <br>
             <hr>
             <hr>
-            <h1>"comment"</h1>
+            <h1 class="hhh">comment</h1>
+            <section id="content3">
+                <div id="noteFeed">
+                    <div id="noteCommentBox">
+                    <div class="feed-item">
+                        <textarea placeholder="댓글을 입력하세요" wrap="off" id="myNote"></textarea>
+                    </div>
+                    <button id="send">입력하기</button>
+                    </div>
+                </div>
+            </section>
         </div>
         </div>
     </div>
 </body>
     <!-- JS -->
     <script src="detail_page.js"></script>
+    <script src="comment.js"></script>
 </html>

@@ -46,7 +46,10 @@
                 <li class="nav-link" id="menu-item"><a href="#features-container" class="menu-link"> Convert </a></li>
                 <li class="nav-link" id="menu-item"><a href="#presentation-container" class="menu-link"> Exhibit </a></li>
                 <li class="nav-link" id="menu-item"><a href="#main-media-container" class="menu-link"> NoticeBoard </a></li>
-                <li class="nav-link" id="menu-item"><a href="#prices-section-container" class="menu-link"> Media </a><li>
+                <li class="nav-link" id="menu-item"><a href="#prices-section-container" class="menu-link"> Media </a></li>
+                <li></li>
+                <!-- 로그아웃 -->
+                <li class="nav-link" id="menu-item"><a type="button" href="#hero-header" class="menu-link" onclick="handleLogout()">LogOut</a></li>
                 </ul>
             </nav>
         </div>
@@ -104,12 +107,15 @@
                     <div class="row">
                         <div class="col-12 col-md-6 mx-auto">
                             <div class="custom-file">
-                            <input type="file" class="custom-file-input" data-target="file-uploader" id="file-uploader">
+                                <input type="file" class="custom-file-input" id="file-uploader">
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-success" onclick="createArticle22()">제작하기</button>
                             </div>
                         </div>
                     </div>
-                    <label class="text-center mb-5 image-preview-wrapper" for="file-uploader">
-                        <img src="https://via.placeholder.com/300x300/efefef?text=Avatar" alt="image-placehoder" class="img-thumbnail" data-target="image-preview">
+                    <label for="file-uploader">
+                        <img src="https://via.placeholder.com/300x300/efefef?text=Avatar" alt="image-placehoder" class="img-thumbnail" id="image-preview">
                         <div class="spinner-wrapper position-absolute" data-target="spinner">
                             <div class="spinner-border text-secondary" role="status">
                                 <span class="sr-only">Loading...</span>
@@ -117,7 +123,7 @@
                         </div>
                     </label>
                     <div>
-                        <button type="button" class="btn btn-success">제작하기</button>
+                        <button type="button" class="btn btn-success" onclick="createArticle22()">제작하기</button>
                     </div>
                 </div>
             </div>
@@ -338,6 +344,7 @@
     <script src="main_f.js"></script>
     <script src="Exhibit.js"></script>
     <script src="convert.js"></script>
+    <script src="sign.js"></script>
 <!-- javascript -->
 </body>
 </html>

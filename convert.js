@@ -3,9 +3,9 @@
 // 1구역 
 
 // STEP 1: select element and register change event
-const imagePreview = document.querySelector('[data-target="image-preview"]');
+const imagePreview = document.getElementById("image-preview");
 const spinner = document.querySelector('[data-target="spinner"]');
-const fileUploader = document.querySelector('[data-target="file-uploader"]');
+const fileUploader = document.getElementById("file-uploader");
 fileUploader.addEventListener("change", handleFileUpload);
 
 async function handleFileUpload(e) {
@@ -20,7 +20,7 @@ try {
     const arrayBuffer = await getArrayBuffer(file);
     const response = await uploadFileAJAX(arrayBuffer);
     
-    alert("업로드 성공!!");
+    alert("File Uploaded Success");
     showPreviewImage(file);
 } catch (error) {
     alert(error);

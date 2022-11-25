@@ -105,9 +105,6 @@
         height: 30px;
     }
     
-    #nav-bar {
-    }
-    
     #nav-bar ul {
         list-style: none;
         display: flex;
